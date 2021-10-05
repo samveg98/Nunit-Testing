@@ -20,7 +20,8 @@ namespace Samveg_Vyas_8737672
         }
         public int SetLength(int length)
         {
-            return length;
+            Length = length;
+            return Length;
         }
         public int GetWidth()
         {
@@ -28,7 +29,8 @@ namespace Samveg_Vyas_8737672
         }
         public int SetWidth(int width)
         {
-            return width;
+            Width = width;
+            return Width;
         }
 
 
