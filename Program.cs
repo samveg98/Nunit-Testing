@@ -10,7 +10,7 @@ namespace Samveg_Vyas_8737672
     {
         static void Main(string[] args)
         {
-            
+            Rectangle rectangle = new Rectangle();
         }
     }
 }
