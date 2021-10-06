@@ -20,7 +20,7 @@ namespace Samveg_Vyas_8737672
             Console.Write("Width: ");
             wid = Console.ReadLine();
 
-            if (int.TryParse(len, out length) && (length<0) && int.TryParse(wid, out width) && (width<0))
+            if (int.TryParse(len, out length) && int.TryParse(wid, out width))
             {
                 rectangle.SetLength(length);
                 rectangle.SetWidth(width);

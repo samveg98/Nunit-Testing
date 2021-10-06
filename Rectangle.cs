@@ -36,10 +36,20 @@ namespace Samveg_Vyas_8737672
 
         public int GetPerimeter()
         {
+            if(Length<0 || Width < 0)
+            {
+                //Length or Breath for rectangle cannot be a negative value
+                throw new ArgumentException();
+            }
             return (2*(Length+Width));
         }
         public int GetArea()
         {
+            if (Length < 0 || Width < 0)
+            {
+                //Length or Breath for rectangle cannot be a negative value
+                throw new ArgumentException();
+            }
             return Length * Width;
         }
 
