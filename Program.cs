@@ -15,24 +15,26 @@ namespace Samveg_Vyas_8737672
 
             Rectangle rectangle = new Rectangle();
 
-            Console.WriteLine("Default Perimeter of rectangle is: {0}", rectangle.GetPerimeter());
-            Console.WriteLine("Default Area of rectangle is: {0}", rectangle.GetArea());
-
-            Console.WriteLine("Length: ");
+            Console.Write("Length: ");
             len = Console.ReadLine();
-            Console.WriteLine("Width: ");
+            Console.Write("Width: ");
             wid = Console.ReadLine();
 
-            length = int.Parse(len);
-            width = int.Parse(wid);
+            if (int.TryParse(len, out length) && (length<0) && int.TryParse(wid, out width) && (width<0))
+            {
+                rectangle.SetLength(length);
+                rectangle.SetWidth(width);
 
-            rectangle.SetLength(length);
-            rectangle.SetWidth(width);
-          
-
-            Console.WriteLine("Perimeter of rectangle is: {0}",rectangle.GetPerimeter());
-            Console.WriteLine("Area of rectangle is: {0}", rectangle.GetArea());
-
+                Console.WriteLine("Perimeter of rectangle is: {0}", rectangle.GetPerimeter());
+                Console.WriteLine("Area of rectangle is: {0}", rectangle.GetArea());
+            }
+            else
+            {
+                Console.WriteLine("Incorrect input \n");
+                Console.WriteLine("Default Perimeter of rectangle is: {0}", rectangle.GetPerimeter());
+                Console.WriteLine("Default Area of rectangle is: {0}", rectangle.GetArea());
+            }
+            
             Console.ReadLine();
         }
     }
