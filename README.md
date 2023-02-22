@@ -1,2 +1,3 @@
-# Samveg_Vyas_8737672
-System Quality assurance Assignment 2
+#N-Unit Testing
+
+Writing Nunit test cases for a C# program which calculates area and peremeter of a rectangle.
